@@ -31,6 +31,7 @@
                     </ul>
                     </g:hasErrors>
                     <g:form resource="${this.transfer}" method="POST">
+                     
                       <fieldset class="form">
                             <f:all bean="transfer"/>
                         </fieldset>

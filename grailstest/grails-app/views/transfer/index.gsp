@@ -60,7 +60,7 @@
                             <div class="btn-group">
                                 <g:link controller="transfer" action="show" class="btn btn-success" id="${info.id}"><g:message code="Details"/></g:link>
                                 <g:link controller="transfer" action="edit" class="btn btn-success" id="${info.id}"><g:message code="Edit"/></g:link>
-                                <g:link controller="transfer" action="delete" id="${info.id}" class="btn btn-secondary delete-confirmation"><g:message code="Delete"/></g:link>
+                                 <input class="delete" type="submit" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
                             </div>
                         </td>
                     </tr>
