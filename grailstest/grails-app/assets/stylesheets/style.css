@@ -35,3 +35,8 @@ h1 {
 .sidebar .nav-link {
     border-radius: 0;
 }
+
+.action-row{
+    width: 135px;
+    text-align: center;
+}
