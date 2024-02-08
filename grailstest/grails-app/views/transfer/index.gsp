@@ -68,8 +68,11 @@
             </tbody>
         </table>
     %{--Pagination Area--}%
-    <div class="paginate">
+    
+         <div class="paginate">
         <g:paginate total="${transferCount ?: 0}" />
-    </div>
+         </div>
+    
+   
     </div>
 </div>

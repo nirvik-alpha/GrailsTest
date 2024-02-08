@@ -22,6 +22,24 @@ static namespace = "UIHelper"
         out << "</div></li>"
     }
 
+    def leftNavigation = { attrs, body ->
+        List navigations = [
+                [controller: "dashboard", action: "index", name: "dashboard"]
+              
+        ]
+
+        if(authenticationService.isAdministratorMember()){
+            navigations.add([controller: "transfer", action: "create", name: "Add Transfer"])
+              navigations.add([controller: "transfer", action: "index", name: "Transfer List"])
+        }
+
+        navigations.each { menu ->
+            out << '<li class="list-group-item">'
+            out << g.link(controller: menu.controller, action: menu.action) { g.message(code: menu.name, args: ['']) }
+            out << '</li>'
+        }
+    }
+
 
 
 

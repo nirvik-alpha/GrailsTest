@@ -36,7 +36,7 @@
 
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
             <ul class="list-group">
-
+               
                 <li class="list-group-item"> <g:link controller="transfer" action="create" ><g:message code="Add Transfer"/></g:link></li>
                 <li class="list-group-item"> <g:link controller="transfer" action="index" ><g:message code="Transfer List"/></g:link></li>
                 
