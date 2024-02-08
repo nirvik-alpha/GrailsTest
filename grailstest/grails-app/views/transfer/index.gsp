@@ -31,7 +31,7 @@
     %{--Table Panel--}%
     <div class="card-body">
         <table class="table table-bordered">
-            <thead class="bg-success">
+            <thead class="bg-warning">
             <tr>
 
                 <g:sortableColumn property="type" title="${g.message(code: "Type")}"/>

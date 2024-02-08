@@ -26,7 +26,27 @@
 				<tr>
                     <th class="text-right"><g:message code="Vehicle Information"/></th><td class="text-left">${transfer.vehicleInformation}</td>
                 </tr>
+                
             </table>
+               
+        </g:if>
+
+          <div class="card-header">
+                <g:message code="Goods Details" args="['Show']"/>
+            </div>
+         <g:if test="${goods}">
+            <table class="table">
+                <tr>
+                    <th class="text-right"><g:message code="Type"/></th><td class="text-left">${goods.name}</td>
+                </tr>
+                <tr>
+                    <th class="text-right"><g:message code="Sender Name"/></th><td class="text-left">${goods.unit}</td>
+                </tr>
+                 <tr>
+                    <th class="text-right"><g:message code="Sender Name"/></th><td class="text-left">${goods.quality}</td>
+                </tr>
+            </table>
+               
         </g:if>
         <div id="show-transfer" class="col-12 content scaffold-show" role="main">
                    

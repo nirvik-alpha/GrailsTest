@@ -17,7 +17,7 @@ class AuthenticationController {
             redirect(controller: "dashboard", action: "index")
         } else {
             flash.message = AppUtil.infoMessage("Email Address or Password not Valid.", false)
-            redirect(controller: "authentication", action: "login")
+            redirect(controller: "transfer", action: "index")
         }
     }
 
