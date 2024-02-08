@@ -10,7 +10,7 @@ class TransferController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 2, 100)
+        params.max = Math.min(max ?: 4, 100)
         respond transferService.list(params), model:[transferCount: transferService.count()]
     }
 

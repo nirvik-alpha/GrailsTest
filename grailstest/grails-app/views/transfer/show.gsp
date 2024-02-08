@@ -24,7 +24,7 @@
                     <th class="text-right"><g:message code="Receiver Address"/></th><td class="text-left">${transfer.receiverAddress}</td>
                 </tr>
 				<tr>
-                    <th class="text-right"><g:message code="Vehicle Info"/></th><td class="text-left">${transfer.vehicleInformation}</td>
+                    <th class="text-right"><g:message code="Vehicle Information"/></th><td class="text-left">${transfer.vehicleInformation}</td>
                 </tr>
             </table>
         </g:if>

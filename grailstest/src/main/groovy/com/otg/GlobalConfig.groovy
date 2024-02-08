@@ -10,6 +10,6 @@ class GlobalConfig {
     {
         return 3
     }
-
+    
 
 }

@@ -20,6 +20,8 @@ class Transfer {
     String receiverAddress
     String vehicleInformation
 
+     static hasMany = [goods: Goods]
+
     static constraints = {
         
     }

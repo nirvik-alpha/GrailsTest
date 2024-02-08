@@ -1,7 +1,7 @@
 <div class="form-group">
     <label><g:message code="transfer.type"/> *</label>
 
- <g:select name="type" class="form-control"  from="${type}" value="${transfer?.type}" optionKey="key" optionValue="value"/>
+<g:select name=type from=”${TransferType.values()}” value=”${TransferType}” optionKey=”key”/>
 
 </div>
 
